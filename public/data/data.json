@@ -1,0 +1,267 @@
+[
+  {
+    "product_id": "P0001",
+    "product_name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "product_image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24931354/236792_iPhone_15_Pro_and_15_Pro_Max_product_photos_AJohnson_0010.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "category": "Phones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LIDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "quantity": 0
+  },
+  {
+    "product_id": "P0002",
+    "product_name": "Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "product_image": "https://www.zdnet.com/a/img/2023/02/09/02d1a507-cea7-4651-9a91-80ece88a0eec/samsung-galaxy-s23-ultra-hero.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "Flagship smartphone with an advanced camera and powerful chipset.",
+    "specification": [
+      "6.8-inch AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "200MP camera",
+      "S Pen support",
+      "1TB storage option"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "quantity": 0
+  },
+  {
+    "product_id": "P0003",
+    "product_name": "Pixel 8 Pro",
+    "brand": "Google",
+    "product_image": "https://www.cnet.com/a/img/resize/e0890b4957c399a958fe4a94acdd3bc9bd26dce7/hub/2023/09/27/7afbd266-b7b4-42e9-b64e-5a9557d23102/20230925-google-pixel-8-01.jpg?auto=webp&width=1200",
+    "category": "Phones",
+    "price": 999,
+    "description": "AI-powered Google Pixel 8 Pro with advanced computational photography.",
+    "specification": [
+      "6.7-inch OLED display",
+      "Google Tensor G3",
+      "50MP camera",
+      "AI photo editing",
+      "512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "quantity": 0
+  },
+  {
+    "product_id": "P0004",
+    "product_name": "OnePlus 11 5G",
+    "brand": "OnePlus",
+    "product_image": "https://www.gadgetpilipinas.net/wp-content/uploads/2023/02/OnePlus-11-5G-Review-Unit-166-770x513.jpg",
+    "category": "Phones",
+    "price": 799,
+    "description": "Fast and smooth performance with Hasselblad camera tuning.",
+    "specification": [
+      "6.7-inch AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "Hasselblad camera",
+      "100W fast charging",
+      "256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "quantity": 0
+  },
+  {
+    "product_id": "P0005",
+    "product_name": "Xiaomi 13 Pro",
+    "brand": "Xiaomi",
+    "product_image": "https://cdn.techturco.com/resize/c/1280x720/storage/old/2023/10/xiaomi-13-pro-IMEI-atiliyor-mu.jpg.webp",
+    "category": "Phones",
+    "price": 899,
+    "description": "High-end flagship with Leica-powered cameras.",
+    "specification": [
+      "6.73-inch AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "50MP Leica camera",
+      "120W fast charging",
+      "512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "quantity": 0
+  },
+  {
+    "product_id": "P0006",
+    "product_name": "Xperia 1 V",
+    "brand": "Sony",
+    "product_image": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2023/06/sony-xperia-1-v-review-wmfixed-15.jpg",
+    "category": "Phones",
+    "price": 1099,
+    "description": "Sony Xperia 1 V with professional-grade camera experience.",
+    "specification": [
+      "6.5-inch 4K OLED display",
+      "Snapdragon 8 Gen 2",
+      "4K video recording",
+      "256GB storage",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "quantity": 0
+  },
+  {
+    "product_id": "C0001",
+    "product_name": "MacBook Pro 16 M2 Max",
+    "brand": "Apple",
+    "product_image": "https://external-preview.redd.it/apple-macbook-pro-16-2023-review-m2-max-challenges-geforce-v0-YpwzcjdfuDptKCuSEGQ2K8E34kGfmezglTqzTDdl4ik.jpg?auto=webp&s=ddee5d876a964422b85952a9e581b3ca6120fb47",
+    "category": "Laptops",
+    "price": 2499,
+    "description": "The ultimate laptop for professionals with M2 Max chip.",
+    "specification": [
+      "16-inch Liquid Retina XDR display",
+      "Apple M2 Max chip",
+      "32GB unified memory",
+      "1TB SSD storage",
+      "20-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "quantity": 0
+  },
+  {
+    "product_id": "C0002",
+    "product_name": "XPS 15",
+    "brand": "Dell",
+    "product_image": "https://sm.pcmag.com/pcmag_uk/review/d/dell-xps-1/dell-xps-15-9530-2023_uxjn.jpg",
+    "category": "Laptops",
+    "price": 1999,
+    "description": "Premium build and performance with the Dell XPS 15.",
+    "specification": [
+      "15.6-inch OLED display",
+      "Intel Core i9 13th Gen",
+      "32GB RAM",
+      "1TB SSD storage",
+      "NVIDIA RTX 4070 GPU"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "quantity": 0
+  },
+  {
+    "product_id": "S0001",
+    "product_name": "Watch Ultra 2",
+    "brand": "Apple",
+    "product_image": "https://photos5.appleinsider.com/gallery/61633-127601-Apple-Watch-Ultra-with-Strap-on-Couch-xl.jpg",
+    "category": "Smart Watches",
+    "price": 799,
+    "description": "Adventure-ready Apple Watch Ultra 2 with advanced features.",
+    "specification": [
+      "49mm Always-On Retina display",
+      "Precision GPS",
+      "Water resistant up to 100m",
+      "Dual-frequency GPS",
+      "36-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "quantity": 0
+  },
+  {
+    "product_id": "S0002",
+    "product_name": "Galaxy Watch 6 Classic",
+    "brand": "Samsung",
+    "product_image": "https://www.stuff.tv/wp-content/uploads/sites/2/2023/07/Samsung-Galaxy-Watch-6-Classic-review-2.jpg?w=1080",
+    "category": "Smart Watches",
+    "price": 599,
+    "description": "Elegant and feature-packed Galaxy Watch 6 Classic.",
+    "specification": [
+      "1.5-inch AMOLED display",
+      "BioActive sensor",
+      "Sleep tracking",
+      "GPS",
+      "Samsung Pay support"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "quantity": 0
+  },
+  {
+    "product_id": "CH0001",
+    "product_name": "65W Fast Charger",
+    "brand": "Anker",
+    "product_image": "https://store.ops.blackbox.com.sa/media/webps/jpg/media/catalog/product/a/n/anker_wall_charger_65w_2xusb-c_1xusb-a_fast_charger_black_-_a2667k11.webp",
+    "category": "Chargers",
+    "price": 59,
+    "description": "Compact and powerful charger for phones and laptops.",
+    "specification": [
+      "65W output",
+      "Dual USB-C ports",
+      "GaN technology",
+      "Travel-friendly design"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "quantity": 0
+  },
+  {
+    "product_id": "CH0002",
+    "product_name": "MagSafe Charger",
+    "brand": "Apple",
+    "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR3RAWtDCsgcISUJ2Mg6fIDRb2FEY31o6vwvxWlG0Qcor97PuPnB16yqB0rS-TqtZKmrY&usqp=CAU",
+    "category": "Chargers",
+    "price": 79,
+    "description": "Fast wireless charging for iPhone and AirPods.",
+    "specification": [
+      "MagSafe compatibility",
+      "15W fast charging",
+      "Compact design",
+      "USB-C cable included"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "quantity": 0
+  },
+  {
+    "product_id": "CAM0001",
+    "product_name": "Canon EOS R10",
+    "brand": "Canon",
+    "product_image": "https://www.rockbrookcamera.com/cdn/shop/articles/22-8-canon-r10-hero.jpg?v=1660580779",
+    "category": "Cameras",
+    "price": 979,
+    "description": "Compact mirrorless camera with advanced autofocus and 4K recording.",
+    "specification": [
+      "24.2MP APS-C CMOS sensor",
+      "4K 60p video",
+      "Dual Pixel CMOS AF II",
+      "ISO 100-32000",
+      "Wi-Fi and Bluetooth"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "quantity": 0
+  },
+  {
+    "product_id": "CAM0002",
+    "product_name": "Sony Alpha ZV-E10",
+    "brand": "Sony",
+    "product_image": "https://chancetalkscameras.com/wp-content/uploads/2024/10/sony-zv-e10-review-aesthetic-02-1024x682.jpg",
+    "category": "Cameras",
+    "price": 798,
+    "description": "Vlog-friendly mirrorless camera with interchangeable lenses.",
+    "specification": [
+      "24.2MP APS-C Exmor CMOS sensor",
+      "4K 30p video",
+      "Fast Hybrid AF",
+      "Vari-angle LCD screen",
+      "Built-in microphone and mic input"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "quantity": 0
+  }
+
+]

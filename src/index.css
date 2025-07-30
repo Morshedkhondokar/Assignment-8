@@ -6,6 +6,7 @@
 
 body{
     font-family: "Sora", sans-serif;
+    background-color: #f6f6f6;
 }
 
 .active{
@@ -17,5 +18,4 @@ body{
 
 ul li{
     margin-right: 16px;
-    color: white;
 }
