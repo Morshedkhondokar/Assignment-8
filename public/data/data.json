@@ -14,7 +14,7 @@
       "LIDAR Scanner",
       "Up to 2TB storage"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.8,
     "quantity": 0
   },
@@ -52,7 +52,7 @@
       "AI photo editing",
       "512GB storage"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.6,
     "quantity": 0
   },
@@ -114,7 +114,7 @@
     "quantity": 0
   },
   {
-    "product_id": "C0001",
+    "product_id": "L0001",
     "product_name": "MacBook Pro 16 M2 Max",
     "brand": "Apple",
     "product_image": "https://external-preview.redd.it/apple-macbook-pro-16-2023-review-m2-max-challenges-geforce-v0-YpwzcjdfuDptKCuSEGQ2K8E34kGfmezglTqzTDdl4ik.jpg?auto=webp&s=ddee5d876a964422b85952a9e581b3ca6120fb47",
@@ -133,7 +133,7 @@
     "quantity": 0
   },
   {
-    "product_id": "C0002",
+    "product_id": "L0002",
     "product_name": "XPS 15",
     "brand": "Dell",
     "product_image": "https://sm.pcmag.com/pcmag_uk/review/d/dell-xps-1/dell-xps-15-9530-2023_uxjn.jpg",
@@ -166,7 +166,7 @@
       "Dual-frequency GPS",
       "36-hour battery life"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.8,
     "quantity": 0
   },
@@ -224,7 +224,7 @@
       "Vari-angle LCD screen",
       "Built-in microphone and mic input"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.6,
     "quantity": 0
   }
