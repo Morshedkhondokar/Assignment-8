@@ -189,42 +189,7 @@
     "rating": 4.5,
     "quantity": 0
   },
-  {
-    "product_id": "CH0001",
-    "product_name": "65W Fast Charger",
-    "brand": "Anker",
-    "product_image": "https://store.ops.blackbox.com.sa/media/webps/jpg/media/catalog/product/a/n/anker_wall_charger_65w_2xusb-c_1xusb-a_fast_charger_black_-_a2667k11.webp",
-    "category": "Chargers",
-    "price": 59,
-    "description": "Compact and powerful charger for phones and laptops.",
-    "specification": [
-      "65W output",
-      "Dual USB-C ports",
-      "GaN technology",
-      "Travel-friendly design"
-    ],
-    "availability": true,
-    "rating": 4.6,
-    "quantity": 0
-  },
-  {
-    "product_id": "CH0002",
-    "product_name": "MagSafe Charger",
-    "brand": "Apple",
-    "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR3RAWtDCsgcISUJ2Mg6fIDRb2FEY31o6vwvxWlG0Qcor97PuPnB16yqB0rS-TqtZKmrY&usqp=CAU",
-    "category": "Chargers",
-    "price": 79,
-    "description": "Fast wireless charging for iPhone and AirPods.",
-    "specification": [
-      "MagSafe compatibility",
-      "15W fast charging",
-      "Compact design",
-      "USB-C cable included"
-    ],
-    "availability": true,
-    "rating": 4.4,
-    "quantity": 0
-  },
+ 
   {
     "product_id": "CAM0001",
     "product_name": "Canon EOS R10",

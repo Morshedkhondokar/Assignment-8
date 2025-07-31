@@ -7,11 +7,16 @@ function App() {
 
 
   return (
+    <>
     <div className='max-w-7xl mx-auto'>
       <Navbar></Navbar>
       <Outlet></Outlet>
+    </div>
+    <div className='bg-white'>
+
       <Footer></Footer>
     </div>
+    </>
   )
 }
 

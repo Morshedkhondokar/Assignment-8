@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router';
+import { GiShoppingCart } from "react-icons/gi";
+import { IoHeartOutline } from "react-icons/io5";
 
 const Navbar = () => {
     const location = useLocation();
@@ -31,9 +33,30 @@ const Navbar = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className={`menu menu-horizontal ${isHome ? "text-white": "text-black"}`}>{Links}</ul>
   </div>
+  {/* icons */}
   <div className="navbar-end">
-    <a className="btn">Button</a>
+  {/* icons container */}
+  <div className="flex items-center gap-4  rounded-full">
+    {/* cart icon */}
+    <GiShoppingCart className={`
+    transition-all cursor-pointer duration-300 ease-in-out
+    ${isHome 
+      ? "text-4xl p-2 rounded-full bg-white hover:text-[#9538e2] hover:shadow-lg" 
+      : "text-4xl p-2 rounded-full border border-gray-300 hover:shadow-md hover:bg-gray-100"
+    }`
+  }/>
+
+    {/* wishlist icon */}
+    <IoHeartOutline className={`
+    transition-all cursor-pointer duration-300 ease-in-out
+    ${isHome 
+      ? "text-4xl p-2 rounded-full bg-white hover:text-[#9538e2] hover:shadow-lg" 
+      : "text-4xl p-2 rounded-full border border-gray-300 hover:shadow-md hover:bg-gray-100"
+    }`
+  }/>
   </div>
+</div>
+
 </div>
      </div>
     );
