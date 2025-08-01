@@ -6,6 +6,9 @@ import Home from './Components/Home/Home.jsx'
 import Statistics from './Components/Statistics/Statistics.jsx'
 import Dashboard from './Components/Dashboard/Dashboard.jsx'
 import Details from './Components/Details/Details.jsx'
+import Cart from './Components/Cart/Cart.jsx'
+import Wishlist from './Components/Wishlist/Wishlist.jsx'
+import CartProvider from './CartProvider/CartProvider.jsx'
 
 const router = createBrowserRouter([
   {
@@ -22,7 +25,21 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children:[
+           {
+            index: true,       
+            element: <Cart />  
+          },
+          {
+            path:'cart',
+            element:<Cart></Cart>
+          },
+          {
+            path:'wishlist',
+            element:<Wishlist></Wishlist>
+          }
+        ]
       },
       {
         path: '/details/:productId',
@@ -33,6 +50,8 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-      <RouterProvider router={router}/>
+  <CartProvider>
+    <RouterProvider router={router}/>
+  </CartProvider>
     
 )

@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Rating from "@mui/material/Rating";
 import { Button } from '@mui/material';
 import { TiHeartFullOutline } from "react-icons/ti";
 import { MdShoppingCartCheckout } from "react-icons/md";
+import CartContext from '../../Context/CartContext';
 
 
 const Details = () => {
     const [productsDetails, setProductsDetails] = useState([]);
     const {productId} = useParams()
+    const {handleAddToCart} = useContext(CartContext)
 
 
     useEffect( () => {
@@ -17,8 +19,7 @@ const Details = () => {
         .then(data => setProductsDetails(data))
     },[])
 
-      const detailsProduct = productsDetails.find(
-    (item) => item.product_id === productId
+      const detailsProduct = productsDetails.find((item) => item.product_id === productId
   );
      if (!detailsProduct) {
     return <h1 className="text-center mt-10">Loading product...</h1>;
@@ -82,7 +83,9 @@ const Details = () => {
                    </div>
                    {/* addCart adn wishlist buttons */}
                    <div className='flex items-center gap-2 mt-4'>
-                    <Button variant="contained"   className="!bg-[#9538e2] !hover:bg-[#7d29b7] text-white !rounded-4xl">Add To Cart <MdShoppingCartCheckout className='ml-3 text-xl'/></Button>
+                    <Button
+                    onClick={() => handleAddToCart(detailsProduct)}
+                     variant="contained"   className="!bg-[#9538e2] !hover:bg-[#7d29b7] text-white !rounded-4xl">Add To Cart <MdShoppingCartCheckout className='ml-3 text-xl'/></Button>
                     <button className='text-4xl p-1 rounded-full border border-gray-300 hover:shadow-md  transition cursor-pointer'><TiHeartFullOutline  className='text-2xl
                     hover:text-[#9538e2] text-[#757478]'/></button>
                    </div>
