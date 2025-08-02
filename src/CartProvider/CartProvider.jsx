@@ -9,7 +9,9 @@ const CartProvider = ({children}) => {
         return get ? JSON.parse(get) : [];
     });
     const [totalPrice, setTotalprice] = useState()
+    const [finalCost, setFinalCost] = useState(0)
 
+    // add to cart
     const handleAddToCart = (product) => {
         const exist = cart.find(item => item.product_id === product.product_id)
        if(exist){
@@ -55,22 +57,49 @@ const CartProvider = ({children}) => {
     useEffect(() => {
         const total = cart.reduce((acc, item) => acc + item.price * item.quantity,0)
         setTotalprice(total)
+        if (total > 0) {
+            setFinalCost(total);
+        }
     },[cart])
 
-    useEffect(() =>{
-
-    },[cart])
+   const hanslePurchase = () => {
+    const purchase = document.getElementById('pruchase_modal');
+    purchase.showModal()
+    setCart([])
+   }
 
 
 
     
-    return (
-        <CartContext.Provider 
-         value={{handleAddToCart, cart, quantityIncreased, quantityDecreased,totalPrice,handleRemoveCart}}>
+    return (<>
+    {/* modal */}
+    {/* Open the modal using document.getElementById('ID').showModal() method */}
+        <button className="btn hidden" onClick={()=>document.getElementById('pruchase_modal').showModal()}>open modal</button>
+        <dialog id="pruchase_modal" className="modal">
+        <div className="modal-box">
+            <div className="w-[70px] mx-auto my-2.5">
+                <img src="/assets/Group.png " alt="" />
+            </div>
+            <h3 className="text-2xl font-bold text-center">Payment Successfully</h3>
+            <hr  className="my-3"/>
+            <p className='text-center font-medium'>Thanks for Pruchasing.</p>
+            <p className='text-center font-medium mt-2.5'>Total Cost: ${finalCost}</p>
+            <div className="modal-action block">
+            <form method="dialog">
+                {/* if there is a button in form, it will close the modal */}
+                <button className="btn w-full rounded-3xl bg-[#eae9e9]">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+    {/* cart provider */}
+    <CartContext.Provider 
+         value={{handleAddToCart, cart,setCart, quantityIncreased, quantityDecreased,totalPrice,handleRemoveCart,
+         hanslePurchase}}>
             <Toaster/>
             {children}
         </CartContext.Provider>
-    );
+    </>);
 };
 
 export default CartProvider;
