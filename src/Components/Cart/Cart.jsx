@@ -23,7 +23,7 @@ const Cart = () => {
                         ''
                     }`}>sort by price</button>
                     <button 
-                    // disabled={cart.length === 0}
+                    disabled={cart.length === 0}
                     onClick={hanslePurchase}
                     className='btn rounded-3xl text-white bg-purple-600 disabled:bg-purple-700'>Purchase</button>
                 </div>
@@ -37,12 +37,12 @@ const Cart = () => {
                     cart.map((item, index) => <CartItem key={index} item={item}></CartItem> )
                 }
            </div> 
-           : <div className="flex flex-col items-center justify-center w-[400px] md:w-[700px] mx-auto lg:w-[948px] h-96
-                      bg-white rounded-2xl shadow-lg my-6">
+           : <div className="flex flex-col items-center justify-center w-[400px] md:w-[700px] mx-auto
+            lg:w-6xl h-96 bg-white rounded-2xl shadow-lg my-6">
                  {/* Empty Icon */}               
                    <FaParachuteBox className='text-8xl text-gray-500' />
                  {/* Message */}
-                 <h2 className="text-xl font-semibold text-gray-700 mt-5">Your Cart is empty</h2>
+                 <h2 className="text-xl font-semibold text-gray-700 mt-5">Your Cart is empty!!</h2>
                </div> 
           }
         </div>

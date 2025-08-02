@@ -5,15 +5,22 @@ import toast, { Toaster } from "react-hot-toast";
 
 const CartProvider = ({children}) => {
     const [cart, setCart] = useState(() => {
-        const get = localStorage.getItem("cart")
-        return get ? JSON.parse(get) : [];
+        const getCartDataFromLocal = localStorage.getItem("cart")
+        return getCartDataFromLocal ? JSON.parse(getCartDataFromLocal) : [];
     });
     const [totalPrice, setTotalprice] = useState()
     const [finalCost, setFinalCost] = useState(0)
 
     // add to cart
     const handleAddToCart = (product) => {
+        
+        if (!product.availability) {
+        toast.error(`${product.product_name} is out of stock!`);
+        return; 
+        }
+
         const exist = cart.find(item => item.product_id === product.product_id)
+
        if(exist){
             const updatedCart = cart.map(item => item.product_id === product.product_id
             ? { ...item, quantity: item.quantity + 1 } : item);

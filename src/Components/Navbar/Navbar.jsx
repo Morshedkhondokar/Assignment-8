@@ -1,11 +1,15 @@
-import React from 'react';
-import { NavLink, useLocation } from 'react-router';
+import React, { useContext } from 'react';
+import { Link, NavLink, useLocation } from 'react-router';
 import { GiShoppingCart } from "react-icons/gi";
 import { IoHeartOutline } from "react-icons/io5";
+import WishlistContext from '../../Context/WishlistContext';
+import CartContext from '../../Context/CartContext';
 
 const Navbar = () => {
+    const {cart} = useContext(CartContext);
+    const {wishlist} = useContext(WishlistContext);
     const location = useLocation();
-    const isHome = location.pathname === '/'
+    const isHome = location.pathname === '/';
 
     const Links =(
         <>
@@ -38,22 +42,44 @@ const Navbar = () => {
   {/* icons container */}
   <div className="flex items-center gap-4  rounded-full">
     {/* cart icon */}
-    <GiShoppingCart className={`
-    transition-all cursor-pointer duration-300 ease-in-out
-    ${isHome 
-      ? "text-4xl p-2 rounded-full bg-white hover:text-[#9538e2] hover:shadow-lg" 
-      : "text-4xl p-2 rounded-full border border-gray-300 hover:shadow-md hover:bg-gray-100"
-    }`
-  }/>
+   <div>
+   <Link>
+    <button className='relative'>
+      {
+        cart.length > 0 && <span className='absolute -top-1 -right-1 text-xs text-white bg-red-500 rounded-full size-4'>
+                {cart.length}
+              </span>
+      }
+         <GiShoppingCart className={`
+          transition-all cursor-pointer duration-300 ease-in-out
+          ${isHome 
+            ? "text-4xl p-2 rounded-full bg-white hover:text-[#9538e2] hover:shadow-lg" 
+            : "text-4xl p-2 rounded-full border border-gray-300 hover:shadow-md hover:bg-gray-100"
+          }`
+        }/>
+    </button>
+   </Link>
+   </div>
 
     {/* wishlist icon */}
-    <IoHeartOutline className={`
-    transition-all cursor-pointer duration-300 ease-in-out
-    ${isHome 
-      ? "text-4xl p-2 rounded-full bg-white hover:text-[#9538e2] hover:shadow-lg" 
-      : "text-4xl p-2 rounded-full border border-gray-300 hover:shadow-md hover:bg-gray-100"
-    }`
-  }/>
+   <div>
+      <Link to='/dashboard/wishlist'>
+          <button className='relative'>
+            {
+              wishlist.length > 0 && <span className='absolute -top-1 -right-1 text-xs text-white bg-red-500 rounded-full size-4'>
+                {wishlist.length}
+              </span>
+            }
+              <IoHeartOutline className={`
+                transition-all cursor-pointer duration-300 ease-in-out
+                ${isHome 
+                  ? "text-4xl p-2 rounded-full bg-white hover:text-[#9538e2] hover:shadow-lg" 
+                  : "text-4xl p-2 rounded-full border border-gray-300 hover:shadow-md hover:bg-gray-100"
+                }`
+              }/>
+          </button>
+      </Link>
+   </div>
   </div>
 </div>
 

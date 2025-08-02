@@ -22,17 +22,18 @@ const CartItem = ({item}) => {
                    {/* Quantity Selector */}
                     <div className="bg-white h-10 rounded-2xl p-2 flex gap-2 w-fit shadow-lg mt-3">
                         <button 
-                            onClick={() => quantityIncreased(item)}
+                            onClick={() => quantityDecreased(item)}
+                           
                             className="bg-purple-500 text-white size-7 rounded-full flex items-center justify-center text-lg font-bold 
-                            hover:bg-purple-600 transition cursor-pointer">
-                            +
+                            hover:bg-purple-600 transition cursor-pointer"
+                            > -
                         </button>
                         <p className="font-semibold text-gray-800 text-lg w-6 text-center">{quantity}</p>
                         <button 
-                            onClick={() => quantityDecreased(item)}
+                             onClick={() => quantityIncreased(item)}
                             className="bg-purple-500 text-white size-7 rounded-full flex items-center justify-center text-lg font-bold  hover:bg-purple-600 transition 
-                            cursor-pointer">
-                            -
+                            cursor-pointer"
+                            > +
                         </button>
                     </div>
 

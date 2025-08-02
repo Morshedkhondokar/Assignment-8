@@ -9,11 +9,14 @@ import Details from './Components/Details/Details.jsx'
 import Cart from './Components/Cart/Cart.jsx'
 import Wishlist from './Components/Wishlist/Wishlist.jsx'
 import CartProvider from './CartProvider/CartProvider.jsx'
+import WishlistProvider from './WishlistProvider/WishlistProvider.jsx'
+import ErrorPage from './ErrorPage/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',
@@ -50,8 +53,10 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  <CartProvider>
-    <RouterProvider router={router}/>
-  </CartProvider>
+  <WishlistProvider>
+    <CartProvider>
+      <RouterProvider router={router}/>
+    </CartProvider>
+  </WishlistProvider>
     
 )
