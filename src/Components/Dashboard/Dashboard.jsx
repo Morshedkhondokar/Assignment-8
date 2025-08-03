@@ -1,7 +1,9 @@
 import {  Link,Outlet, useLocation } from "react-router";
+import useTitle from "../../Title/useTitle";
 
 
 const Dashboard = () => {
+  useTitle("Dashboard")
     const location = useLocation(); 
      const isCartActive =
            location.pathname === "/dashboard" || location.pathname === "/dashboard/cart";

@@ -6,9 +6,11 @@ import { TiHeartFullOutline } from "react-icons/ti";
 import { MdShoppingCartCheckout } from "react-icons/md";
 import CartContext from '../../Context/CartContext';
 import WishlistContext from '../../Context/WishlistContext';
+import useTitle from '../../Title/useTitle';
 
 
 const Details = () => {
+  useTitle("Details")
     const [productsDetails, setProductsDetails] = useState([]);
     const {productId} = useParams()
     const {handleAddToCart} = useContext(CartContext)

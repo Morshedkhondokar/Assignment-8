@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
     ResponsiveContainer,} from "recharts";
+import useTitle from "../../Title/useTitle";
 
 const Statistics = () => {
+    useTitle("Statistics")
     const [products, setProducts] = useState([]);
 
     useEffect( () => {

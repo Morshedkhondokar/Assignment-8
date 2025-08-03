@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CartContext from "../Context/CartContext";
 import toast, { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router";
 
 
 const CartProvider = ({children}) => {
@@ -10,6 +11,7 @@ const CartProvider = ({children}) => {
     });
     const [totalPrice, setTotalprice] = useState()
     const [finalCost, setFinalCost] = useState(0)
+    // const navigate = useNavigate()
 
     // add to cart
     const handleAddToCart = (product) => {
@@ -75,6 +77,14 @@ const CartProvider = ({children}) => {
     setCart([])
    }
 
+    // close modal 
+    const handleCloseModal = () => {
+        const closeModal = document.getElementById('pruchase_modal');
+        closeModal.close()
+        // navigate('/')
+        // alert('hello')
+    }
+
 
 
     
@@ -94,7 +104,11 @@ const CartProvider = ({children}) => {
             <div className="modal-action block">
             <form method="dialog">
                 {/* if there is a button in form, it will close the modal */}
-                <button className="btn w-full rounded-3xl bg-[#eae9e9]">Close</button>
+                <button 
+                id="closeModal"
+                className="btn w-full rounded-3xl bg-[#eae9e9]"
+                onClick={handleCloseModal}
+                >Close</button>
             </form>
             </div>
         </div>

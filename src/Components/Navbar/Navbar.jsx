@@ -43,7 +43,7 @@ const Navbar = () => {
   <div className="flex items-center gap-4  rounded-full">
     {/* cart icon */}
    <div>
-   <Link>
+   <Link to='/dashboard/cart'>
     <button className='relative'>
       {
         cart.length > 0 && <span className='absolute -top-1 -right-1 text-xs text-white bg-red-500 rounded-full size-4'>

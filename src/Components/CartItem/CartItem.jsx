@@ -20,7 +20,7 @@ const CartItem = ({item}) => {
                         <h5 className='font-semibold text-[13px] md:text-xl'>Price: ${price}</h5>
                     </div>
                    {/* Quantity Selector */}
-                    <div className="bg-white h-10 rounded-2xl p-2 flex gap-2 w-fit shadow-lg mt-3">
+                    <div className="bg-white h-10 rounded-2xl p-2 flex gap-2 w-fit shadow-lg md:mt-3">
                         <button 
                             onClick={() => quantityDecreased(item)}
                            
